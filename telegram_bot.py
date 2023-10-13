@@ -16,10 +16,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text('Sure! I can help you with any questions you have. Just let me know what you need.')
 
-
 async def bye(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text('Goodbye! Feel free to reach out if you have any more questions.')
-
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id
@@ -31,7 +29,6 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
  # Reply to the user in the original chat
     await context.bot.send_message(chat_id=chat_id, text="Your message has been forwarded and will be processed.")
-
 
 bot_token = 'your_BOT_TOKEN'
 app = ApplicationBuilder().token(bot_token).build()
