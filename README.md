@@ -16,7 +16,7 @@ Before running the script, make sure you have the following:
 
 ## Configuration
 
-Before running the script, you need to configure the following variables:
+Before running the script, you need to configure the following variables on the py file:
 
 ```python
 your_chatid = 'your_chatid'
